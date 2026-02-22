@@ -1,3 +1,8 @@
+
+
+> [!IMPORTANT]  
+> This is a personal implementation built for internal project requirements. While it is open-source for community fixes and transparency, it is maintained primarily for my own ecosystem.
+
 # Relayra
-Lightweight, high-performance framework for distributed communication using Redis Pub/Sub with Lettuce.
- 
+
+**Relayra** is a lightweight, high-performance messaging framework designed for distributed systems. It leverages **Redis Pub/Sub** via the **Lettuce** driver to provide seamless, low-latency communication across multiple service instances.
