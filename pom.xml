@@ -19,11 +19,11 @@
     </modules>
 
 
-   <distributionManagement>
+ <distributionManagement>
     <repository>
         <id>github</id>
         <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/OGXMC/Relayra</url>
+        <url>https://maven.pkg.github.com/a8kj7sea/Relayra</url>
     </repository>
 </distributionManagement>
          
