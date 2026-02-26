@@ -6,3 +6,7 @@
 # Relayra
 
 **Relayra** is a lightweight, high-performance messaging framework designed for distributed systems. It leverages **Redis Pub/Sub** via the **Lettuce** driver to provide seamless, low-latency communication across multiple service instances.
+
+
+
+_ add policy | system to make sure the listener accept the message 
