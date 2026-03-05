@@ -57,7 +57,8 @@ public class LettuceRelayQueue<T> extends AsyncService implements RelayQueue<T> 
                     }
                 } catch (Exception e) {
                     failureStreak++;
-                    long backoff = Math.min(30000, (long) Math.pow(2, failureStreak) * 1000);
+                    long backoff = (long) Math.min(30000.0, Math.pow(2, failureStreak) * 1000);
+
                     try {
                         Thread.sleep(backoff);
                     } catch (InterruptedException ie) {
