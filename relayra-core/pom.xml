@@ -6,10 +6,10 @@
     <parent>
         <groupId>me.a8kj.relayra</groupId>
         <artifactId>relayra</artifactId>
-        <version>1.0-beta</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>me.a8kj.relayra.core</groupId>
+    <groupId>${project.parent.groupId}.core</groupId>
     <artifactId>relayra-core</artifactId>
 
     <properties>
@@ -22,7 +22,7 @@
         <dependency>
             <groupId>me.a8kj.relayra.api</groupId>
             <artifactId>relayra-api</artifactId>
-            <version>1.0-beta</version>
+            <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
 
@@ -30,14 +30,14 @@
         <dependency>
             <groupId>me.a8kj.relayra.codec</groupId>
             <artifactId>relayra-codec</artifactId>
-            <version>1.0-beta</version>
+            <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>me.a8kj.relayra.config</groupId>
             <artifactId>relayra-config</artifactId>
-            <version>1.0-beta</version>
+            <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -56,6 +56,20 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>true</createDependencyReducedPom>
+                            <relocations>
+                                <relocation>
+                                    <pattern>com.google.gson</pattern>
+                                    <shadedPattern>me.a8kj.relayra.libs.gson</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>io.lettuce</pattern>
+                                    <shadedPattern>me.a8kj.relayra.libs.lettuce</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.yaml.snakeyaml</pattern>
+                                    <shadedPattern>me.a8kj.relayra.libs.yaml</shadedPattern>
+                                </relocation>
+                            </relocations>
                         </configuration>
                     </execution>
                 </executions>

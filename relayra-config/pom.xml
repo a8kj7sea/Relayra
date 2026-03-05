@@ -6,19 +6,12 @@
     <parent>
         <groupId>me.a8kj.relayra</groupId>
         <artifactId>relayra</artifactId>
-        <version>1.0-beta</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>me.a8kj.relayra.config</groupId>
+    <groupId>${project.parent.groupId}.config</groupId>
     <artifactId>relayra-config</artifactId>
 
-
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -32,7 +25,6 @@
         <dependency>
             <groupId>com.github.a8kj7sea.Moxie</groupId>
             <artifactId>Moxie-Core</artifactId>
-            <version>v0.2</version>
             <scope>compile</scope>
         </dependency>
 
@@ -40,14 +32,12 @@
         <dependency>
             <groupId>com.github.a8kj7sea</groupId>
             <artifactId>SimpleLog</artifactId>
-            <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>com.github.a8kj7sea</groupId>
             <artifactId>EventBus</artifactId>
-            <version>v1.1</version>
             <scope>compile</scope>
         </dependency>
 
@@ -55,7 +45,6 @@
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
-            <version>2.2</version>
             <scope>compile</scope>
         </dependency>
 

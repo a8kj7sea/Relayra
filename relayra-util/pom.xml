@@ -6,10 +6,10 @@
     <parent>
         <groupId>me.a8kj.relayra</groupId>
         <artifactId>relayra</artifactId>
-        <version>1.0-beta</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>me.a8kj.relayra.util</groupId>
+    <groupId>${project.parent.groupId}.util</groupId>
     <artifactId>relayra-util</artifactId>
 
     <properties>
@@ -17,7 +17,6 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 
 
 </project>

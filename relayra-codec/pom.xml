@@ -6,11 +6,11 @@
     <parent>
         <groupId>me.a8kj.relayra</groupId>
         <artifactId>relayra</artifactId>
-        <version>1.0-beta</version>
+        <version>${revision}</version>
     </parent>
 
 
-    <groupId>me.a8kj.relayra.codec</groupId>
+    <groupId>${project.parent.groupId}.codec</groupId>
     <artifactId>relayra-codec</artifactId>
 
     <properties>
@@ -23,15 +23,8 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>26.0.2</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>2.13.2</version>
             <scope>compile</scope>
         </dependency>
 
